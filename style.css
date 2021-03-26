@@ -1,0 +1,180 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgba(0,0,0,1);
+  font-family: 'Poppins', sans-serif;
+}
+.logo{
+  margin-bottom: 15px;
+    margin-top: 15px;
+}
+.nav-links{
+   margin-top: 95px;
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+.nav-link:hover {
+  background-color: #5e5e5e;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links a{
+  color: white;
+  text-decoration: none;
+  letter-spacing: 3px;
+  /* font-weight: bold; */
+}
+.burger{
+  display: none;
+}
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+
+@media screen and (max-width: 1082px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-links {
+        position: fixed;
+        left: 0px;
+        height: 60vh;
+        top: 2vh;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 35%;
+        opacity: 90%;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in;
+        z-index: 1;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+        transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+
+
+
+
+.round {
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 3%;
+}
+
+.loe {
+  padding-left: 6%;
+  padding-top: 60px;
+  padding-bottom: 200px;
+}
+
+.logocut {
+  height: 60%;
+  width: 60%;
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.leadership {
+  background-color: #a9a9a9;
+}
+
+.engg {
+  background-color: #595377;
+}
+.outreach{
+  background-color: #dbc555;
+
+}
+
+.round:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.logo-purple {
+  wi
+}
+
+.loe-title-leadership {
+  position: relative;
+  bottom: 5.5rem;
+  left: 1.7rem;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3.1rem;
+  font-weight: 1000;
+  color: white;
+}
+.loe-title-engineering{
+  position: relative;
+  bottom: 5.5rem;
+  left: 1rem;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3.1rem;
+  font-weight: 1000;
+  color: white;
+}
+.loe-title-outreach{
+  text-align: center;
+  position: relative;
+  bottom: 5.5rem;
+  left: 0.3rem;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 1000;
+  color: white;
+}
